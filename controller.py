@@ -2,9 +2,9 @@ import text
 import view
 import model
 
-
+my_pb = model.PhoneBook()
 def start():
-    my_pb = model.PhoneBook()
+
     while True:
         choice = view.main_menu()
 

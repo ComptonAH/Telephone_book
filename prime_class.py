@@ -49,10 +49,12 @@ class Player:
 
 
 my_deck = Deck()
+print(my_deck)
 my_deck.shuffle()
+print(my_deck)
 
 stone = Player('STONE')
-alex = Player('Валуевский')
+alex = Player('Сергей Рябков')
 
 stone.draw(my_deck.take())
 stone.draw(my_deck.take())
@@ -64,3 +66,5 @@ print(stone.show())
 print(alex.show())
 print('Выиграл: ')
 print(stone.name if stone.score() > alex.score() else alex.name)
+
+print(my_deck)
